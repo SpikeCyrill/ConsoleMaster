@@ -1,19 +1,21 @@
 package com.brunoyam.consolemaster.service;
 
-import com.brunoyam.consolemaster.console.Task;
-import com.brunoyam.consolemaster.dao.FileManipulator;
+import com.brunoyam.consolemaster.model.Article;
+import com.brunoyam.consolemaster.model.Task;
+import com.brunoyam.consolemaster.dao.ArticleFileManipulator;
 
 import java.io.File;
 
 public class DeleteService implements TaskService {
 
     public void doTask(Task task) {
-        FileManipulator fileManipulator = new FileManipulator();
+        ArticleFileManipulator articleFileManipulator = new ArticleFileManipulator();
 
-        String fileName = task.getArguments()[0];
-        File file = new File(fileName);
+        String articleName = task.getArguments()[0];
 
-        fileManipulator.deleteFile(file);
+        Article newArticle = new Article(articleName);
+
+        articleFileManipulator.delete(newArticle);
     }
 
 }

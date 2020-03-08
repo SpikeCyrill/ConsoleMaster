@@ -1,5 +1,6 @@
 package com.brunoyam.consolemaster.console;
 
+import com.brunoyam.consolemaster.model.Task;
 import com.brunoyam.consolemaster.service.CommandExecutor;
 
 import java.util.Scanner;
