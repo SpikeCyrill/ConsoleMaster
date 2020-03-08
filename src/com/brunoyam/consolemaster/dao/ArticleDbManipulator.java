@@ -13,7 +13,7 @@ public class ArticleDbManipulator implements ArticleManipulator {
         Connection connection = null;
         try {
             Class.forName("org.sqlite.JDBC");
-            connection = DriverManager.getConnection("jdbc:sqlite:D:\\kolosov\\articles.s3db");
+            connection = DriverManager.getConnection("jdbc:sqlite:articles.s3db");
 
             String queryText = "INSERT INTO articles(name, text) VALUES(?, ?)";
 

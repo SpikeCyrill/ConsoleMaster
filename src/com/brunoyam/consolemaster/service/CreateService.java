@@ -3,9 +3,6 @@ package com.brunoyam.consolemaster.service;
 import com.brunoyam.consolemaster.dao.ArticleManipulator;
 import com.brunoyam.consolemaster.model.Article;
 import com.brunoyam.consolemaster.model.Task;
-import com.brunoyam.consolemaster.dao.ArticleFileManipulator;
-
-import java.io.File;
 
 public class CreateService implements TaskService {
 
