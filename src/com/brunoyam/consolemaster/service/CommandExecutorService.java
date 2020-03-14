@@ -39,6 +39,7 @@ public class CommandExecutorService implements Runnable, CommandExecutor {
             case create: return createService;
             case delete: return new DeleteService();
             case exit: return new ExitService();
+            case show: return new ShowService();
             default: return null;
         }
 
