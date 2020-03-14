@@ -1,6 +1,6 @@
 package com.brunoyam.consolemaster.model;
 
-import com.brunoyam.consolemaster.console.Request;
+import com.brunoyam.consolemaster.ui.console.Request;
 
 public class Task {
 

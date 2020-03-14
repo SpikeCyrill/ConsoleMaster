@@ -1,6 +1,6 @@
 package com.brunoyam.consolemaster.service;
 
-import com.brunoyam.consolemaster.console.ConsoleWriter;
+import com.brunoyam.consolemaster.ui.console.ConsoleWriter;
 import com.brunoyam.consolemaster.dao.ArticleDataRW;
 import com.brunoyam.consolemaster.dao.ArticleDbDataWR;
 import com.brunoyam.consolemaster.model.Article;
